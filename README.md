@@ -1,4 +1,4 @@
-# rc-upload2
+# rc-upload
 
 React Upload
 

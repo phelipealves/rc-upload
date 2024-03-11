@@ -1,8 +1,10 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  # release:
+  #   types: [created]
+  push:
+    branches: [ master ]
 
 jobs:
   build:
@@ -32,4 +34,3 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           registry: "https://npm.pkg.github.com"
-          tag: ${{github.ref_name}}

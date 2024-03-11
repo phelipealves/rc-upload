@@ -28,6 +28,6 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: npm publish --branch ${{github.ref_name}}
+      - run: npm publish --tag ${{github.ref_name}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
